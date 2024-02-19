@@ -1,0 +1,57 @@
+\documentclass[12pt,a4paper,twoside,openright]{book}
+
+\usepackage[italian]{babel}
+\usepackage{style/isi-lt}
+\input{style/isi-lst}
+
+%--------------------------------------------------------------------
+%---------------------- INFORMAZIONI SULLA TESI ---------------------
+%--------------------------------------------------------------------
+
+\universita{Alma Mater Studiorum -- Università di Bologna}
+\campus{Campus di Cesena}
+\dipartimento{Dipartimento di Informatica -- Scienza e Ingegneria}
+\cdl{Corso di Laurea in Ingegneria e Scienze Informatiche}
+
+\titolo{Qui il titolo\\della\\tesi}
+\materia{Sistemi Embedded e Internet of Things}
+
+\laureando{Angela Speranza}
+
+\relatore[Prof.]{Alessandro Ricci}
+\correlatorea[Prof.]{Elvis Mazzomi}
+\correlatoreb[Dott.ssa]{Ylenia Battistini}
+
+\annoaccademico{2022 -- 2023}
+
+\dedica{eventuale dedica o citazione}
+
+\makeindex
+
+\begin{document}
+\frontmatter 
+
+\maketitle
+\tableofcontents
+
+\input{thesis-parts/introduction.tex}
+	
+\mainmatter
+
+\pagestyle{fancy} 
+\fancyhead[LE,RO]{\thepage}
+\fancyfoot{}
+
+\input{thesis-parts/chapter-one.tex}
+\input{thesis-parts/chapter-two.tex}
+\input{thesis-parts/chapter-three.tex}
+\input{thesis-parts/chapter-four.tex}
+\input{thesis-parts/conclusions.tex}	
+\input{thesis-parts/acknowledgements.tex}
+	
+\backmatter	
+
+\bibliography{bibliografia}{}
+\bibliographystyle{plain}
+
+\end{document}
